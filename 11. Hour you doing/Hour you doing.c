@@ -1,13 +1,12 @@
-/* Construye un programa que permita ingresar 2 tiempos, expresados en horas, minutos y
-segundos, el mismo debe emitir por pantalla la suma de ambos (también en horas, minutos
-y segundos). */
+/* Build a program that sums and outputs two given times expressed in hours, minutes and
+seconds */
 
 #include <stdio.h>
 #include <math.h> 
   
 int main () { 
     printf(" WELCOME TO Hour you doing?\n");
-    printf(" Given a starting time and a lapse of time, we'll able to tell you the ending time for your task.\n\n");
+    printf(" Given a starting time and a lapse of time, we'll be able to tell you the ending time for your task.\n\n");
     
     int startingTime[3], lapse[3], endingTime[3], days=0;
 
