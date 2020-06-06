@@ -1,5 +1,5 @@
-/* Construye un programa que permita ingresar los valores de 2 de los ángulos interiores de
-un triángulo, y se emita por pantalla el valor del restante */
+/* Build a program that allows the input of two angles for a triangle
+and calculates and outputs the remaining one's value in degrees */
 
 #include <stdio.h>
 #include <math.h> 
