@@ -1,5 +1,4 @@
-/* Construye un programa que permita ingresar las medidas de los lados de un rectángulo; el
-mismo debe emitir por pantalla su superficie y su perímetro */
+/* Build a program that asks for the sides of a rectangle and outputs its area and perimeter */
 
 #include <stdio.h>
 #include <math.h> 
