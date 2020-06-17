@@ -1,5 +1,4 @@
-/* Ingresa una fecha en el formato DDMMAAAA y separarlo en Dia, Mes y Año utilizando
-operaciones aritméticas. */
+/* Return a given DDMMYYYY date split into Day, Month and Year working with arithmetic operators. */
 
 #include <stdio.h>
 #include <math.h> 
