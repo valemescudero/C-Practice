@@ -17,11 +17,11 @@ int main () {
 
     if (seconds >= 60) {
         minutes = seconds/60;
-        seconds -= (minutes*60);
+        seconds = seconds%60;
     };
     if (minutes >= 60) {
         hours = minutes/60;
-        minutes -= (hours*60);
+        minutes = minutes%60;
     };
     
     printf(" The entered seconds are equal to %d hour(s), %d minute(s) and %d second(s).\n\n", hours, minutes, seconds);    
