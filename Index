@@ -23,3 +23,4 @@ the corresponding algorithms
 making proper use of quotient and modulus operators for integers
 15. Return a given DDMMYYYY date split into Day, Month and Year working with arithmetic operators
 16. Create an algorithm that reads a given Celsius temperature and returns its equivalent in Fahrenheit
+17. 
