@@ -8,3 +8,18 @@ its equivalent in feet (integer) and inches (float, 1 space after decimal point)
 6. Build a program that asks for your age in years and returns the equivalent of days lived
 7. Build a program to calculate and output the total price for the given kilos
 and price by kilo
+8. Build a program that allows the input of two angles for a triangle
+and calculates and outputs the remaining one's value in degrees
+9. Build a program that asks for the sides of a rectangle and outputs
+its area and perimeter
+10. Build a program that asks for the area of a square (in square meters)
+and outputs its corresponding perimeter
+11. Build a program that sums and outputs two given times expressed in hours, minutes and
+seconds
+12. Develop an algorithm that reads a radius of a circle and calculates and outputs the area
+13. Calculate the hypotenuse of a right triangle given the length of its two legs with
+the corresponding algorithms
+14. Take a given amount of seconds (integer) and return its equivalent in hours, minutes and seconds
+making proper use of quotient and modulus operators for integers
+15. Return a given DDMMYYYY date split into Day, Month and Year working with arithmetic operators
+16. Create an algorithm that reads a given Celsius temperature and returns its equivalent in Fahrenheit

@@ -1,6 +1,4 @@
-/* Desarrolla un algoritmo que permita leer un valor que represente una temperatura
-expresada en grados Celsius y convierta dicho valor en un valor expresado en grados
-Fahrenheit.*/
+/* Create an algorithm that reads a given Celsius temperature and returns its equivalent in Fahrenheit.*/
 
 
 #include <stdio.h>

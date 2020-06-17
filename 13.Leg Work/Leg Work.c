@@ -1,5 +1,5 @@
-/* Determina la hipotenusa de un triángulo rectángulo conocidas las longitudes de sus dos
-catetos. Desarrolla los correspondientes algoritmos. */
+/* Calculate the hypotenuse of a right triangle given the length of its two legs with
+the corresponding algorithms. */
 
 #include <stdio.h>
 #include <math.h> 

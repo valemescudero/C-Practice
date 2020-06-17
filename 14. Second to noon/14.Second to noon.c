@@ -1,5 +1,5 @@
-/* Ingresa una cantidad entera de segundos y conviértela en horas, minutos y segundo
-utilizando los operadores de cociente y resto enteros. */
+/* Take a given amount of seconds (integer) and return its equivalent in hours, minutes and seconds
+making proper use of quotient and modulus operators for integers. */
 
 #include <stdio.h>
 #include <math.h> 
