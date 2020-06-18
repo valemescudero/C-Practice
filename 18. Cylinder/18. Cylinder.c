@@ -12,7 +12,7 @@ int main () {
     scanf("%f %f", &radius, &height);
 
     do {
-        printf("\n What would you like to do?:\n 1 Calculate the Area\n 2 Calculate the Volume\n 3 Change radius and hight\n 4 Exit\n\n ");
+        printf("\n What would you like to do?:\n 1 Calculate the Area\n 2 Calculate the Volume\n 3 Change radius and height\n 4 Exit\n\n ");
         scanf("%d", &option);
         switch (option) {
             case 1:
