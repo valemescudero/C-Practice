@@ -12,7 +12,7 @@ int main () {
     scanf("%f %f", &radius, &height);
 
     do {
-        printf("\n What would you like to do?:\n 1 Calculate the Area\n 2 Calculate the Volume\n 3 Exit\n\n ");
+        printf("\n What would you like to do?:\n 1 Calculate the Area\n 2 Calculate the Volume\n 3 Change radius and hight\n 4 Exit\n\n ");
         scanf("%d", &option);
         switch (option) {
             case 1:
@@ -20,13 +20,18 @@ int main () {
             break;
             case 2:
             volF(radius, height);
+            break;
             case 3:
+            printf("\n Please, enter radius and height of your cylinder separated by a space:\n ");
+            scanf("%f %f", &radius, &height);
+            break;
+            case 4:
             break;
             default:
             printf("\n Sorry, invalid option.\n\n");
             break;
         };
-    } while (option != 3);
+    } while (option != 4);
     return 0;
 };
 
