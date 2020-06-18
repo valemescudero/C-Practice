@@ -1,5 +1,5 @@
-/* Desarrolla un algoritmo que permita calcular el área de un triángulo en función de las
-longitudes de sus lados previamente leídos desde el teclado */
+/* Develop an algorithm that allows the calculation of the area of a triangle working with the lengths
+of all of its sides from input */
 
 #include <stdio.h>
 #include <math.h>
