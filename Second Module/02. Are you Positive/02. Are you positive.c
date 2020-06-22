@@ -1,3 +1,4 @@
+/* Build a program that determines whether a given number is POSITIVE, NEGATIVE or ZERO. */
 
 #include <stdio.h>
 #include <math.h>

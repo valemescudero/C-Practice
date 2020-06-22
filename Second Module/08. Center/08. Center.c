@@ -1,5 +1,4 @@
-/* Desarrolla un algoritmo que le permita leer tres valores A, B y C e indique cuál es valor del
-centro (análogo al ejercicio 7). */
+/* Write a program that reads three values and indicates which one is the center value. */
 
 #include <stdio.h>
 #include <math.h>

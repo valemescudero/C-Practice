@@ -1,5 +1,4 @@
-/* Ingresados dos números reales, la computadora muestra su cociente. Si el segundo número
-es cero, la computadora muestra un mensaje indicando la imposibilidad de la operación. */
+/* Build a program that asks for two real numbers and then shows their quotient. */
 
 
 #include <stdio.h>

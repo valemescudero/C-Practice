@@ -1,5 +1,4 @@
-/* Desarrolla un algoritmo que le permita leer tres valores A, B y C e indicar si uno de los tres
-divide a los otros dos exactamente. */
+/* Develop a program that reads three values and indicates whether any of the three is divisible by any of the others */
 
 #include <stdio.h>
 #include <math.h>

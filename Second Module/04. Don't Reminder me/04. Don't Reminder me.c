@@ -1,3 +1,4 @@
+/* Build a program that can determine whether, from a set of given numbers, the highest is divisible by the lowest. */
 
 #include <stdio.h>
 #include <math.h>
@@ -9,7 +10,7 @@ int main(){
     double a = 0, b = 0; // given numbers
     int option = 0;
 
-    printf("\n Welcome. This program can determine whether, from a set of given numbers,\n the highest is devisible by the lowest or if there is a reminder.\n\n");
+    printf("\n Welcome. This program can determine whether, from a set of given numbers,\n the highest is divisible by the lowest or if there is a reminder.\n\n");
     printf(" What would you like to do?\n\n 1 Enter a set of numbers\n 2 Exit\n\n ");
     scanf("%d", &option);
 
