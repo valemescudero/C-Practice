@@ -11,26 +11,28 @@ void negativeF(int *, int *);
 
 int main() {
     int a = 0, b = 0;
-    int option = 0;
+    char option = '0';
 
     printf("\n Welcome. This program will ask you for two numbers and tell you whether only one of them is negative.\n\n");
     
     do {
         printf(" What would you like to do?\n 1 Test a set of numbers\n 2 Exit.\n\n ");
-        scanf("%d", &option);
+        scanf("%c", &option);
+        fflush(stdin); 
         switch (option) {
-            case 1:
+            case '1':
                 printf("\n Please, enter two integer values separated by a space:\n ");
                 scanf("%d %d", &a, &b);
+                fflush(stdin);
                 negativeF(&a,&b);
                 break;
-            case 2:
+            case '2':
                 break;    
             default:
-                printf("\n Sorry, invalid option. What would you like to do?\n 1 Test a set of numbers\n 2 Exit\n. ");
+                printf("\n Sorry, invalid option.\n ");
                 break;
         }
-    } while (option != 2);
+    } while (option != '2');
 
     return 0;
 }
@@ -44,5 +46,3 @@ void negativeF(int * a, int * b) {
             printf("\n These numbers have the same sign.\n\n");
         }
 }
-
-
