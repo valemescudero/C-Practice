@@ -1,10 +1,10 @@
-/* Develop a program that reads three values and indicates whether any of the three is divisible by any of the others */
+/* Develop a program that reads three values and indicates
+whether any of the three can perfectly divide the others */
 
 #include <stdio.h>
 #include <math.h>
 
 void divisibleF(double, double, double);
-void divisionF(double, double, int*, int*);
 
 int main(){
     double a = 0, b = 0, c = 0; // given numbers
@@ -17,7 +17,7 @@ int main(){
     do {
         switch (option) {
             case 1:
-                printf("\n Please, enter three numbers separated by a space:\n ");
+                printf("\n Please, enter three numbers separated by spaces:\n ");
                 scanf ("%lf %lf %lf", &a, &b, &c);
                 printf("\n");
                 divisibleF(a, b, c);
@@ -38,34 +38,17 @@ int main(){
 };
 
 void divisibleF(double a, double b, double c) {
-    int none, duplicate;
-    divisionF(a, b, &none, &duplicate);
-    divisionF(b, c, &none, &duplicate);
-    divisionF(c, a, &none, &duplicate);
-    if (none == 1) {
-        printf("\n None of the numbers entered is divisible by any of the others.\n\n");
-    };
 
-};
-
-void divisionF(double n, double n2, int* none, int* dup) {
-    if (n == n2) {
-        if (*dup != n) { 
-            *dup = n;
-            printf("\n %f is divisible by %f because all numbers are divisible by themselves.\n", n, n2);
-            *none = 0;
-        };
+    if (a == b && b == c) {
+        printf("\n All three numbers are the same value.\n All numbers are divisible by themselves.\n");
+    } else if (fmod(b, a) == 0 && fmod(c, a) == 0) {
+        printf("\n Number %f can divide both %f and %f perfectly.\n", a, b, c);
+    } else if (fmod(c, b) == 0 && fmod(a, b) == 0) {
+        printf("\n Number %f can divide both %f and %f perfectly.\n", b, a, c);
+    } else if (fmod(a, c) == 0 && fmod(b, c) == 0) {
+        printf("\n Number %f can divide both %f and %f perfectly.\n", c, a, b);
     } else {
-        if (fmod(n,n2) == 0) {
-            int quot = n/n2;
-            printf("\n %f is divisible by %f (quotient = %d).\n", n, n2, quot);
-            *none = 0;
-        };
-        if (fmod(n2,n) == 0) {
-            int quot = n2/n;
-            printf("\n %f is divisible by %f (quotient = %d).\n", n2, n, quot);
-            *none = 0;
-        };
+        printf("\n None of the entered numbers can perfectly divide the other two.");
     };
 };
 

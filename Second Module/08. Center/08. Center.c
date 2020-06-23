@@ -16,7 +16,7 @@ int main () {
     do {
         switch (option) {
             case 1:
-                printf("\n\n Please, enter three numbers separated with a space:\n ");
+                printf("\n\n Please, enter three numbers separated with spaces:\n ");
                 scanf("%lf %lf %lf", &a, &b, &c);
                 centerF(a, b, c);
                 printf("\n\n Would you like do another test?\n\n 1 Yes\n 2 No (Exit)\n\n ");

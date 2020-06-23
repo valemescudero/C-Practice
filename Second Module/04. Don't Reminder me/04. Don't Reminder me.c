@@ -10,7 +10,7 @@ int main(){
     double a = 0, b = 0; // given numbers
     int option = 0;
 
-    printf("\n Welcome. This program can determine whether, from a set of given numbers,\n the highest is divisible by the lowest or if there is a reminder.\n\n");
+    printf("\n Welcome. This program can determine whether, from a set of given numbers,\n the highest is divisible by the lowest or if there is a remainder.\n\n");
     printf(" What would you like to do?\n\n 1 Enter a set of numbers\n 2 Exit\n\n ");
     scanf("%d", &option);
 
@@ -57,7 +57,7 @@ void divisibleF(double highest, double lowest) {
     if (fmod(highest, lowest) == 0) {
         printf("\n The higher number (%f) is divisible by the lowest (%f).\n\n", highest, lowest);
     } else {
-        printf("\n The higher number (%f) is not divisible by the lowest (%f).\n Its reminder is %f.\n\n", highest, lowest, fmod(highest, lowest));
+        printf("\n The higher number (%f) is not divisible by the lowest (%f).\n Its remainder is %f.\n\n", highest, lowest, fmod(highest, lowest));
     };
 };
 
