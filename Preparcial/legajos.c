@@ -9,52 +9,50 @@ int main() {
     int legajosM = 0, legajosF = 0;
     int acumEdad = 0;
     printf("\n Bienvenido.\n");
-
     do {
-        printf("\n Ingrese legajo:\n ");
-        scanf("%d", &legajo);
-        fflush(stdin);
+    printf("\n Ingrese legajo:\n ");
+    scanf("%d", &legajo);
+    fflush(stdin);
     
-        if (legajo > 1200 && legajo < 4000) {
+    if (legajo > 1200 && legajo < 4000) {
         legajosCont++;
 
-            while (edad < 14) {
-                printf("\n Ingrese edad:\n ");
-                scanf("%d", &edad);
-                fflush(stdin);
+        while (edad < 14) {
+            printf("\n Ingrese edad:\n ");
+            scanf("%d", &edad);
+            fflush(stdin);
 
-                if(edad < 14){
-                    printf("\n El sistema no acepta edades menores a 14 años.\n");
-                } else {
+            if(edad < 14){
+                printf("\n El sistema no acepta edades menores a 14 años.\n");
+            } else {
                 acumEdad += edad;
-                };
             };
+    };
 
-            do {
-                printf("\n Ingrese género (F/M/O):\n ");
-                scanf("%c", &genero);
-                fflush(stdin);
+    do {
+            printf("\n Ingrese género (F/M/O):\n ");
+            scanf("%c", &genero);
+            fflush(stdin);
 
-                if(genero != 'F' && genero != 'M' && genero != 'O') {
-                    printf("\n Código de género inválido (case sensitive).\n");
-                };
-            } while (genero != 'F' && genero != 'M' && genero != 'O');
-
-            if (genero == 'F') {
-                legajosF++;
+            if(genero != 'F' && genero != 'M' && genero != 'O') {
+                printf("\n Código de género inválido (case sensitive).\n");
             };
-            
-            if (genero == 'M') {
-                legajosM++;
+    } while (genero != 'F' && genero != 'M' && genero != 'O');
 
-                if (edad > mayorEdadM) {
-                    mayorEdadM = edad;
-                    legajoMayorEdadM = legajo;
-                }
-            };
-        } else if (legajo != -1) {
-                printf("\n Legajo inválido.\n\n");
-            };
+    if (genero == 'F') {
+        legajosF++;
+    };
+    if (genero == 'M') {
+        legajosM++;
+        if (edad > mayorEdadM) {
+            mayorEdadM = edad;
+            legajoMayorEdadM = legajo;
+        }
+    };
+
+    } else if (legajo != -1) {
+        printf("\n Legajo inválido.\n\n");
+    };
     } while (legajo != -1);
 
     printf("\n Cantidad de empleados ingresados: %d.", legajosCont);
@@ -82,6 +80,6 @@ int main() {
 
     printf("\n\n Presione ENTER para salir");
     system("pause");
-
+    
     return 0;
 };
