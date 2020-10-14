@@ -1,5 +1,5 @@
-/* Ingresados 3 números enteros, la computadora indica si están desordenados u ordenados
-en forma creciente o decreciente. */
+/* Given three integers, the program should indicate whether they are arranged
+in ascending or descending order or not at all */
 
 
 #include <stdio.h>

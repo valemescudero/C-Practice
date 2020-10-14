@@ -1,4 +1,4 @@
-/* Se ingresa un número de hasta 5 cifras y se indica si es o no capicúa */
+/* Build a program that determines whether an up to 5 digits number is palindrome or not */
 
 #include <stdio.h>
 

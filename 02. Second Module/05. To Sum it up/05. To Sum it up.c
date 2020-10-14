@@ -1,4 +1,4 @@
-/* Create a program that can determine whether the sum of a set of given numbers is EVEN or ODD. */
+/* Create a program that can determine whether the sum of a set of given numbers is EVEN or ODD */
 
 
 #include <stdio.h>

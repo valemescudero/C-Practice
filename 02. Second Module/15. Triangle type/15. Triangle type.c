@@ -1,6 +1,6 @@
-/* Construye un programa que ingrese los valores de los lados de un triángulo: a) Valide si las
-medidas pueden formar un triángulo y b) detecte y muestre un mensaje correspondiente a
-su tipo (EQUILÁTERO, ISÓSCELES, O ESCALENO) */
+/* Build a program that, having asked for three segment lengths, determines :
+a) if a triangle is possible between them
+b) if the possible triangle is Equilateral, Isosceles or Scalene) */
 
 #include <stdio.h>
 

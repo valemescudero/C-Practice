@@ -1,4 +1,4 @@
-/* Write a program that reads three values and indicates which one is the center value. */
+/* Write a program that reads three values and indicates which one is the center value */
 
 #include <stdio.h>
 #include <math.h>

@@ -1,4 +1,5 @@
-/* Build a program that can determine whether, from a set of given numbers, the highest is divisible by the lowest. */
+/* Build a program that can determine whether, from a set of given numbers,
+the highest is divisible by the lowest */
 
 #include <stdio.h>
 #include <math.h>

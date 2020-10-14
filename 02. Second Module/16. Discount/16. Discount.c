@@ -1,5 +1,5 @@
-// En un almacén se rebaja 20% del precio al cliente si el valor a pagarse es mayor a $200. Dado
-// un valor, muestre lo que debe pagar el cliente.
+/* Build a program to print the total for a shop with a 20% discount
+for any purchase higher than $200 */
 
 float discountF(float);
 

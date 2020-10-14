@@ -1,4 +1,4 @@
-/* Build a program that asks for two real numbers and then shows their quotient. */
+/* Build a program that asks for two real numbers and then shows their quotient */
 
 
 #include <stdio.h>

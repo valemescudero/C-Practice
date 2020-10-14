@@ -1,4 +1,4 @@
-/* Create an algorithm that can determine which of two given numbers is the greatest.*/
+/* Create an algorithm that can determine which of two given numbers is the greatest */
 
 #include <stdio.h>
 #include <math.h>

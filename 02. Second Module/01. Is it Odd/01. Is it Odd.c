@@ -1,4 +1,4 @@
-
+/* Develop an algorithm that ask for a number and prints whether the given number is EVEN or ODD */
 
 #include <stdio.h>
 #include <math.h>

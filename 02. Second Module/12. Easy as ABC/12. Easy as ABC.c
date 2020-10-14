@@ -1,3 +1,4 @@
+/* Given three char, the program should print them rearranged per their corresponding ASCII Code */
 
 #include <stdio.h>
 

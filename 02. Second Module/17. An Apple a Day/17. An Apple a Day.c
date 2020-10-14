@@ -1,9 +1,9 @@
-// Una frutería ofrece las manzanas con descuento según la siguiente tabla:
-// Num de Kg. Comprados % descuento
-// 0 - 2 0
-// 2.01 - 5 10
-// 5.01 - 10 15
-// 10.01 en adelante 20
+// A greengrocer's shop if having a discount on their apples according to the following table:
+// Kgs bought - discount
+// 0 - 2 0%
+// 2.01 - 5 10%
+// 5.01 - 10 15%
+// 10.01+ 20%
 
 float discountF(float, float);
 

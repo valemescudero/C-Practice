@@ -1,4 +1,5 @@
-/* Develop an algorithm that calculates the area of a circle segment taking the circle's radius and the apothem of the triangular portion */
+/* Develop an algorithm that calculates the area of a circle segment
+taking the circle's radius and the apothem of the triangular portion */
 
 #include <stdio.h>
 #include <math.h>

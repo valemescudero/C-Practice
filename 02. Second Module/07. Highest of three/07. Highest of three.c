@@ -1,4 +1,4 @@
-/* Write a program that reads three values and indicates which one is the highest. */
+/* Write a program that reads three values and indicates which one is the highest */
 
 #include <stdio.h>
 #include <math.h>

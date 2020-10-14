@@ -1,6 +1,6 @@
 /* Write a program that stores in a vector of DIM 10 the first 10 numbers of the lottery.
 Users must be asked for position and number such as the fifth number can be
-entered before the second.*/
+entered before the second */
 
 #include <stdlib.h>
 #include <stdio.h>
