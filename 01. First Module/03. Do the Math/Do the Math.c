@@ -1,3 +1,7 @@
+/* Develop an algorithm that reads two entered values and prints their sum,
+difference, product, quotient, mean and the double of the difference between
+the first and half of the second */
+
 #include <stdio.h>
 #include <math.h> 
   

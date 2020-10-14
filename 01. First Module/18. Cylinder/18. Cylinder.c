@@ -1,3 +1,6 @@
+/* Develop an algorithm to determine the area and volume of a cylinder whose radius
+(r) and height (h) are entered by the user */
+
 #include <stdio.h>
 #include <math.h>
 

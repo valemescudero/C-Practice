@@ -1,5 +1,5 @@
 /* Calculate the hypotenuse of a right triangle given the length of its two legs with
-the corresponding algorithms. */
+the corresponding algorithms */
 
 #include <stdio.h>
 #include <math.h> 

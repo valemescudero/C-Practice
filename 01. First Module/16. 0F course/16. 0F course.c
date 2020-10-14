@@ -1,4 +1,5 @@
-/* Create an algorithm that reads a given Celsius temperature and returns its equivalent in Fahrenheit.*/
+/* Create an algorithm that reads a given Celsius temperature and
+returns its equivalent in Fahrenheit */
 
 
 #include <stdio.h>

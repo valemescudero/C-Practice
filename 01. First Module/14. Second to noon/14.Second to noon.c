@@ -1,5 +1,5 @@
 /* Take a given amount of seconds (integer) and return its equivalent in hours, minutes and seconds
-making proper use of quotient and modulus operators for integers. */
+making proper use of quotient and modulus operators for integers */
 
 #include <stdio.h>
 #include <math.h> 

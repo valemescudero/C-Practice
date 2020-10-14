@@ -1,4 +1,4 @@
-/* Return a given DDMMYYYY date split into Day, Month and Year working with arithmetic operators. */
+/* Return a given DDMMYYYY date split into Day, Month and Year working with arithmetic operators */
 
 #include <stdio.h>
 #include <math.h> 
