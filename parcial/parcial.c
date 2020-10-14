@@ -74,13 +74,13 @@ void funcionUno (int * escuela, int *legajosProcesados, int * docentesIT, int * 
 void funcionDos (char * especialidad, int * docentesI, int * docentesM, int * docentesE) {
     switch (* especialidad) {
     case 'I':
-        *docentesI++;
+        *docentesI = *docentesI +1;
         break;
     case 'M':
-        *docentesM++;
+        *docentesM = *docentesM +1;
         break;
     case 'E':
-        *docentesE++;
+        *docentesE = *docentesE +1;
         break;
     }
 }
@@ -93,7 +93,6 @@ void funcionTres(char * especialidad, int asistencia, int legajo, int * mayorAsi
     {
     case 'I':
         *asistenciaI+= asistencia;
-        printf("hola");
         break;
     case 'M':
         *asistenciaM+= asistencia;
