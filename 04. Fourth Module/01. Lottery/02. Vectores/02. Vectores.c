@@ -12,3 +12,15 @@ d) Invertir los elementos del vector sin utilizar otro vector. Por ejemplo, el v
 los enteros: 1 2 3, debe quedar 3 2 1. void invertirOrden(int vect[], int
 unNum);
  */
+
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+
+#define DIM 10
+
+int main() {
+
+    system("pause");
+    return 0;
+};
