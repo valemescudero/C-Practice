@@ -19,10 +19,10 @@ unNum);
 
 #define DIM 10
 
-void store(int * numbers[]);
-int find(int numbers[], int * searchFor);
+void store(int numbers[]);
+int find(int numbers[], int* searchFor);
 int countOccurrences(int numbers[], int* match);
-void reverse(int *numbers[], int right);
+void reverse(int numbers[], int right);
 
 
 int main() {
@@ -41,9 +41,9 @@ int main() {
         printf("\n 2. Find the first ocurrence of a number inside the 'numbers' array");
         printf("\n 3. Find the number of occurrences of a number inside the 'numbers' array");
         printf("\n 4. Reverse all numbers inside of 'numbers' array");
-        printf("\n 5. Exit");
+        printf("\n 5. Exit\n ");
 
-        scanf("%d", &option);
+        scanf("%c", &option);
         fflush(stdin);
 
         switch (option) {
@@ -51,18 +51,21 @@ int main() {
             store(&numbers); //-------------------STORE NUMBERS---------------
 
             printf("\n The stored array 'numbers' looks like this:\n");
-                
+            printf(" [");
             for (int i = 0; i < DIM; i++){
-                printf("%d\n", numbers[i]);
+                printf("%d", numbers[i]);
+                if(i<DIM-1){
+                    printf(", ");
+                }
             };
 
-            printf("\n");
+            printf("]\n");
             break;
 
         case '2':
             occurrence = find(numbers, &searchFor);//------------------FIND NUMBER----------------
             
-            if(occurrence != -1){
+            if(occurrence > -1){
                 printf("\n The first ocurrence of %d appears after %d numbers at numbers[%d]\n", searchFor, occurrence, occurrence);
             } else {
                 printf("\n There are no coincidences for %d inside of 'numbers' array.\n", searchFor);
@@ -104,45 +107,44 @@ int main() {
     return 0;
 };
 
-void store(int * numbers[]) {
-
+void store(int numbers[]) {
+    printf("\n Please, enter the numbers:\n");
     for (int i =0; i < DIM; i++){
         scanf("%d", &numbers[i]);
         fflush(stdin);
     };
 };
 
-int find(int numbers[], int * searchFor){
-    
+int find(int numbers[], int *searchFor){
+ 
     printf("\n Please, enter a number to search for its first ocurrence of.\n");
-    scanf("%d", &searchFor);
+    scanf("%d", searchFor);
     fflush(stdin);
 
     for (int i =0; i < DIM; i++){
-        if (numbers[i]==searchFor){
+        if (numbers[i] == (*searchFor)){
             return i;
-        } else {
-            return -1;
         };
     };
+    return -1;
 };
 
 int countOccurrences(int numbers[], int* match){
     int matches = 0;
 
     printf("\n Please, enter a number to search for all the instances of its ocurrence within numbers array.\n");
-    scanf("%d", &match);
+    scanf("%d", match);
     fflush(stdin);
 
     for (int i =0; i < DIM; i++){
-        if (numbers[i]==match){
+        if (numbers[i] == (*match)){
             matches++;
         };
     };
     return matches;
 };
 
-void reverse(int *numbers[], int right) {
+void reverse(int numbers[], int right) {
     int left = 0;
     while (left < right){
         int temp = numbers[left];
