@@ -3,7 +3,8 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define APP_NAME_LEN 15;
+#define APP_NAME_LEN 15
+#define MAX_LINE 100
 
 int getConfInfo(char*, char*, char*, char*);
 void printHeader(char appName[]);
@@ -48,9 +49,9 @@ int getConfInfo(char* appName, char* circuit, char* circuit2, char* appVersion) 
         return 1;
     }; 
     
-    char line[100];
+    char line[MAX_LINE];
     int lineCont = 0;
-    while(fgets(line, sizeof line, fptr) != NULL) {
+    while(fgets(line, MAX_LINE, fptr) != NULL) {
         switch (lineCont) {
             case 0:
                 strcpy(appName, line);
