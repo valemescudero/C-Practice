@@ -50,7 +50,7 @@ int main() {
         printf("\n 2. Find the first ocurrence of a number inside the array");
         printf("\n 3. Find the number of occurrences of a number inside the array");
         printf("\n 4. Reverse all numbers in the array");
-
+        // ---------------NEW FUNCTIONS-------------------------------
         printf("\n 5. Find the sum of all the elements in the array");
         printf("\n 6. Find the lowest number in the array");
         printf("\n 7. Find the mean for the elements in the array");
@@ -62,13 +62,13 @@ int main() {
         printf("\n 13. Print all numbers in an even position inside the array");
         printf("\n 14. Exit\n ");
 
-        scanf("%c", &option);
+        scanf("%d", &option);
         fflush(stdin);
 
         switch (option) {
         case 1:
-            system("cls");
             store(&numbers); //-------------------STORE NUMBERS---------------
+            system("cls");
             printf("\n The stored array 'numbers' looks like this:\n");
             printf(" [");
             for (int i = 0; i < DIM; i++){
@@ -80,6 +80,7 @@ int main() {
 
             printf("]\n\n\n\n");
             system("pause");
+            system("cls");
             break;
 
         case 2:
@@ -92,6 +93,7 @@ int main() {
                 printf("\n There are no coincidences for %d inside of 'numbers' array.\n\n", searchFor);
             };
             system("pause");
+            system("cls");
             break;
 
         case 3:
@@ -104,6 +106,7 @@ int main() {
                 printf("\n There are no coincidences for %d inside of 'numbers' array.\n\n", match);
             };   
             system("pause");
+            system("cls");
             break;
 
         case 4:
@@ -117,60 +120,52 @@ int main() {
             };
             printf("\n\n\n\n");
             system("pause");
+            system("cls");
             break;
 
         case 5:
             printf("The sum of all the elements in the array is %d", sum(numbers));
             printf("\n\n\n\n");
             system("pause");
+            system("cls");
             break;
             
         case 6:
             printf("The lowest number in the array is %d", lowest(numbers));
             printf("\n\n\n\n");
             system("pause");
+            system("cls");
             break;
             
         case 7:
-            printf("The mean for the elements in the array is %d", mean(numbers));
+            printf("The mean for the elements in the array is %.2f", mean(numbers));
             printf("\n\n\n\n");
             system("pause");
+            system("cls");
             break;
             
         case 8:
             higherEnd(numbers);
-            printf("\n\n\n\n");
-            system("pause");
             break;
             
         case 9:
             findMutiples(numbers);
-            printf("\n\n\n\n");
-            system("pause");
             break;
             
         case 10:
             highest(numbers);
-            printf("\n\n\n\n");
-            system("pause");
             break;
             
         case 11:
             even(numbers);
-            printf("\n\n\n\n");
-            system("pause");
             break;
             
         case 12:
             odd(numbers);
-            printf("\n\n\n\n");
-            system("pause");
             break;
             
         case 13:
             evenPosition(numbers);
-            printf("\n\n\n\n");
-            system("pause");
             break;
 
         case 14: //Exit
@@ -180,6 +175,7 @@ int main() {
             system("cls");
             printf("\n Invalid option.\n\n\n\n");            
             system("pause");
+            system("cls");
             break;
         };
 
@@ -190,6 +186,7 @@ int main() {
 };
 
 void store(int numbers[]) {
+    system("cls");
     printf("\n Please, enter the numbers:\n ");
     for (int i =0; i < DIM; i++){
         scanf("%d", &numbers[i]);
@@ -258,8 +255,7 @@ int lowest(int numbers[]){
 
 float mean(int numbers[]){
     int sumAux = sum(numbers);
-    float mean = (float)sumAux/DIM;
-
+    float mean = (float)sumAux/(float)DIM;
     return mean;
 };
 
@@ -267,37 +263,43 @@ void higherEnd(int numbers[]) {
     float meanAux = mean(numbers);
     int none = 1;
 
-        printf("\n The numbers higher than the mean of the array are:\n");
+    printf("\n The numbers higher than the mean of the array are:\n");
 
-        for (int i =0; i < DIM; i++){
-            if((float)numbers[i] > meanAux){
-                none--;
-                printf("%d ", numbers[i]);
+    for (int i =0; i < DIM; i++){
+        if(((float)numbers[i]) > meanAux){
+            none--;
+            printf("%d ", numbers[i]);
         };
-        if (none == 1){
-            printf("None. Therefore, all numbers inside the array must be the same.");
-        };
-            printf("\n\n\n\n");
-            system("pause");
-    };   
+    };
+    if (none == 1){
+        printf("None. Therefore, all numbers inside the array must be the same.");
+    };
+
+    printf("\n\n\n\n");
+    system("pause");
+    system("cls");
 
 };
 
 void findMutiples(int numbers[]){
     int none = 1;
 
-        printf("\n The numbers multiple of %d inside the array are:\n", numbers[DIM-1]);
+    printf("\n The numbers multiple of %d inside the array are:\n", numbers[DIM-1]);
+    if(numbers[DIM-1] != 0) {
         for (int i =0; i < DIM; i++){
             if(numbers[i]%numbers[DIM-1] == 0){
                 none--;
                 printf("%d ", numbers[i]);
+            };
         };
-        if (none == 1){
-            printf("None.");
-        };
-            printf("\n\n\n\n");
-            system("pause");
-    };   
+    };
+
+    if (none == 1){
+        printf("None.");
+    };
+    printf("\n\n\n\n");
+    system("pause");
+    system("cls");
 };
 
 void highest(int numbers[]){
@@ -316,52 +318,58 @@ void highest(int numbers[]){
     };
     printf("The highest number in the array is %d with position %d.\n", highest, highestIndex);
     printf("It appears %d times.\n", occurrence);
-
+    printf("\n\n\n\n");
+    system("pause");
+    system("cls");
 };
 
 void even(int numbers[]){
     int none = 1;
 
-        printf("\n The even numbers inside the array are:\n");
-        for (int i =0; i < DIM; i++){
-            if(numbers[i]%2 == 0){
-                none--;
-                printf("%d ", numbers[i]);
+    printf("\n The even numbers inside the array are:\n");
+    for (int i =0; i < DIM; i++){
+        if(numbers[i]%2 == 0){
+            none--;
+            printf("%d ", numbers[i]);
         };
+
         if (none == 1){
             printf("None.");
         };
-            printf("\n\n\n\n");
-            system("pause");
-    };   
+    }; 
+    printf("\n\n\n\n");
+    system("pause");
+    system("cls");  
 };
 
 void odd(int numbers[]){
     int none = 1;
 
-        printf("\n The odd numbers inside the array are:\n");
-        for (int i =0; i < DIM; i++){
-            if(numbers[i]%2 != 0){
-                none--;
-                printf("%d ", numbers[i]);
+    printf("\n The odd numbers inside the array are:\n");
+    for (int i =0; i < DIM; i++){
+        if(numbers[i]%2 != 0){
+            none--;
+            printf("%d ", numbers[i]);
         };
-        if (none == 1){
-            printf("None.");
-        };
-            printf("\n\n\n\n");
-            system("pause");
-    };   
+    };
+    
+    if (none == 1){
+        printf("None.");
+    };
+
+    printf("\n\n\n\n");
+    system("pause");
+    system("cls");
 };
 
 void evenPosition(int numbers[]){
 
-        printf("\n The numbers on an even position inside the array are:\n");
-        for (int i =0; i < DIM; i++){
-            if(i%2 == 0){
-                printf("%d ", numbers[i]);
-        };
+    printf("\n The numbers on an even position inside the array are:\n");
+    for (int i =0; i < DIM; i+=2){
+        printf("%d ", numbers[i]);
+    };
 
-        printf("\n\n\n\n");
-        system("pause");
-    };   
+    printf("\n\n\n\n");
+    system("pause");
+    system("cls");
 };
