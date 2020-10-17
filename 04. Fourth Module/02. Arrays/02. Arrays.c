@@ -36,6 +36,7 @@ int main() {
 
     printf(" Welcome.\n");
     do {
+        system("cls");
         printf("\n Please, select an option:");
         printf("\n 1. Enter numbers into the 'numbers' array");
         printf("\n 2. Find the first ocurrence of a number inside the 'numbers' array");
@@ -48,8 +49,8 @@ int main() {
 
         switch (option) {
         case '1':
+            system("cls");
             store(&numbers); //-------------------STORE NUMBERS---------------
-
             printf("\n The stored array 'numbers' looks like this:\n");
             printf(" [");
             for (int i = 0; i < DIM; i++){
@@ -59,30 +60,36 @@ int main() {
                 }
             };
 
-            printf("]\n");
+            printf("]\n\n\n\n");
+            system("pause");
             break;
 
         case '2':
+            system("cls");
             occurrence = find(numbers, &searchFor);//------------------FIND NUMBER----------------
             
             if(occurrence > -1){
-                printf("\n The first ocurrence of %d appears after %d numbers at numbers[%d]\n", searchFor, occurrence, occurrence);
+                printf("\n The first ocurrence of %d appears after %d numbers at numbers[%d]\n\n", searchFor, occurrence, occurrence);
             } else {
-                printf("\n There are no coincidences for %d inside of 'numbers' array.\n", searchFor);
+                printf("\n There are no coincidences for %d inside of 'numbers' array.\n\n", searchFor);
             };
+            system("pause");
             break;
 
         case '3':
+            system("cls");
             matches = countOccurrences(&numbers, &match);//------------------OCCURRENCE OF NUMBER----------------
             
             if(matches > 0){
-                printf("\n The number %d appears %d times inside of 'numbers' array\n", match, matches);
+                printf("\n The number %d appears %d times inside of 'numbers' array.\n\n", match, matches);
             } else {
-                printf("\n There are no coincidences for %d inside of 'numbers' array.\n", match);
+                printf("\n There are no coincidences for %d inside of 'numbers' array.\n\n", match);
             };   
+            system("pause");
             break;
 
         case '4':
+            system("cls");
             reverse(&numbers, DIM-1);//---------------REVERSE NUMBERS-------------------
     
             printf("\n The rearranged array 'numbers' looks like this now:\n");
@@ -90,14 +97,17 @@ int main() {
             for (int i =0; i < DIM; i++){
                 printf("%d\n", numbers[i]);
             };
-            printf("\n");
+            printf("\n\n\n\n");
+            system("pause");
             break;
 
         case '5': //Exit
             break;
 
         default:
-            printf("\n Invalid option.\n");
+            system("cls");
+            printf("\n Invalid option.\n\n\n\n");            
+            system("pause");
             break;
         };
 
@@ -108,7 +118,7 @@ int main() {
 };
 
 void store(int numbers[]) {
-    printf("\n Please, enter the numbers:\n");
+    printf("\n Please, enter the numbers:\n ");
     for (int i =0; i < DIM; i++){
         scanf("%d", &numbers[i]);
         fflush(stdin);
@@ -117,7 +127,7 @@ void store(int numbers[]) {
 
 int find(int numbers[], int *searchFor){
  
-    printf("\n Please, enter a number to search for its first ocurrence of.\n");
+    printf("\n Please, enter a number to search for its first ocurrence of.\n ");
     scanf("%d", searchFor);
     fflush(stdin);
 
@@ -132,7 +142,7 @@ int find(int numbers[], int *searchFor){
 int countOccurrences(int numbers[], int* match){
     int matches = 0;
 
-    printf("\n Please, enter a number to search for all the instances of its ocurrence within numbers array.\n");
+    printf("\n Please, enter a number to search for all the instances of its ocurrence within numbers array.\n ");
     scanf("%d", match);
     fflush(stdin);
 
